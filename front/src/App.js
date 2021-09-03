@@ -1,5 +1,5 @@
-import React, { Component, Fragment} from 'react';
-import {Route, Switch} from 'react-router-dom';
+import React, { Component} from 'react';
+import {Route} from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import WatchPage from './pages/WatchPage';
