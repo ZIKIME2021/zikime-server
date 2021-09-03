@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react';
-import Button from '../common/Button';
+import React from 'react';
+import AuthForm from '../components/auth/AuthForm';
+import AuthTemplate from '../components/auth/AuthTemplate';
 
 const LoginPage = () => {
     return (
-        <Fragment>
-        <div>로그인</div>
-        </Fragment>
+            <AuthTemplate>
+                <AuthForm type='login'/>
+            </AuthTemplate>
     );
 };
 
