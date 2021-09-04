@@ -23,18 +23,23 @@ class Player extends Component {
     }
 
     componentDidMount(){
-        if(Hls.isSupported() && this.Player){
-            const streamURL = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
-            const video = this.Player;
 
+
+        if(Hls.isSupported() && this.player){
+
+            
+            const video = this.player;
+            const streamURL = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+            
             video.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
                 return false;
             });
-
+            
             const hls = new Hls();
             hls.loadSource(streamURL);
             hls.attachMedia(video);
+
             hls.on(Hls.Events.MANIFEST_LOADED, function(){
                 video.play();
             });
