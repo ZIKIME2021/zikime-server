@@ -12,14 +12,12 @@ class ProtegeInfoList extends Component {
             align: 'center',
             width: '30vw',
         }
-        const {data} = this.props;
-        const list = data.map(
-           info => (
-               <ProgeteInfo
-                    info = {info}
-                />
-           )
-       );
+        let list = [];
+        let {data} = this.props;
+        for(let i = 0; i < data.length; i++) {
+            list.push(<div key = {data[i].id}><ProgeteInfo info={data[i]}/></div>);
+        }
+       
         return (
             <Fragment>
             <div style={style}>
