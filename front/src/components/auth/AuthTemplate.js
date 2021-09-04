@@ -36,7 +36,7 @@ const AuthTemplate = ({children}) => {
             <InnerBox>
                 <div className = 'title'>
                     {/* <Link to ='/' style={{color:`${palette.blue[0]}` }}>  ZIKIME </Link> */}
-                    <Link to='/'><Title>ZIKIME</Title></Link>
+                    <Link to='/'><Title>안심 지키미</Title></Link>
                 </div>
                 {children}
             </InnerBox>
