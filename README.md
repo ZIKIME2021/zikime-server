@@ -84,3 +84,19 @@ $ npm start
 
 3. 의존성
 
+```json
+"dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "immutable": "^4.0.0-rc.14",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.1.1",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.1.3",
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v19.3.0",
+    "uws": "^200.0.0"
+}
+```
+
+
+
